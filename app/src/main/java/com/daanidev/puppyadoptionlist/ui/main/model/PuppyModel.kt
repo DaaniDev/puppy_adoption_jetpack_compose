@@ -2,7 +2,6 @@ package com.daanidev.puppyadoptionlist.ui.main.model
 
 import android.os.Parcel
 import android.os.Parcelable
-import java.io.Serializable
 
 data class PuppyModel(val puppyID:Int, val name:String?, val bread:String?, val age:String?,
                       val gender:String?, val length:Float, val color:String?, val image:Int):Parcelable {

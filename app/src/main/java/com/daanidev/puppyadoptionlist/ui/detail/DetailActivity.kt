@@ -1,19 +1,13 @@
 package com.daanidev.puppyadoptionlist.ui.detail
 
 import android.R
-import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -25,8 +19,6 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.daanidev.puppyadoptionlist.StaggeredVerticalGrid
-import com.daanidev.puppyadoptionlist.ui.main.Card
 import com.daanidev.puppyadoptionlist.ui.main.model.PuppyModel
 
 class DetailActivity:AppCompatActivity() {
