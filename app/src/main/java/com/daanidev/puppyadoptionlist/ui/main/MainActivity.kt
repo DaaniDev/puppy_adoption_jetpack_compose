@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -89,6 +90,7 @@ fun Card(
             verticalArrangement = Arrangement.Top
         )
         {
+            LocalContext.current.assets.openFd("font_name.ttf")
             val image: Painter = painterResource(id = puppy.image)
      Image(painter = image, contentDescription = puppy.bread,
     modifier= Modifier
